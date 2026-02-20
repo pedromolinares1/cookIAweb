@@ -12,7 +12,7 @@ async function buscarReceta() {
     div.innerHTML = `<p style="color:var(--gold-main); text-align:center; letter-spacing:3px; font-size:0.8rem; margin-top:40px;">Iniciando síntesis culinaria...</p>`;
 
     try {
-        const response = await fetch("https://localhost:7288/api/Recipe/generate", {
+        const response = await fetch("https://cookia.onrender.com/api/Recipe/generate", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
