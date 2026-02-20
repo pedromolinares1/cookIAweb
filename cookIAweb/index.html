@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookIA | Cocina Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="formal-header">
+        <h1 class="logo-gourmet">CookIA</h1>
+        <p class="tagline">SÍNTESIS CULINARIA DE PRECISIÓN</p>
+        <div class="gold-divider"></div>
+    </header>
+
+    <main class="container">
+        <form class="form-receta" id="formReceta">
+            <div class="inputs-row">
+                <div class="input-wrapper">
+                    <input type="text" id="ingrediente" required placeholder=" ">
+                    <label for="ingrediente">Ingrediente base</label>
+                </div>
+
+                <div class="input-wrapper">
+                    <input type="text" id="objetivo" required placeholder=" ">
+                    <label for="objetivo">Objetivo nutricional</label>
+                </div>
+            </div>
+            <button id="buscar-receta" type="submit">SOLICITAR RECETA</button>
+        </form>
+
+        <div id="resultado" class="recipe-display">
+            <div class="placeholder-msg"></div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
